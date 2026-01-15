@@ -22,7 +22,7 @@ export const services: Service[] = [
   },
   {
     icon: FileCheck,
-    title: "Regularização de Imóveis",
+    title: "Georreferenciamento e Regularização de Imóveis",
     description: "Assessoria completa para regularização de propriedades, garantindo conformidade legal e documental de seu imóvel.",
     features: ["Retificação de área", "Unificação de lotes", "Desmembramento", "Averbação"]
   }
