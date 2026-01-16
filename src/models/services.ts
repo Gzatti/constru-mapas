@@ -18,7 +18,7 @@ export const services: Service[] = [
     icon: Compass,
     title: "Engenharia, Inspeção e Volumetria",
     description: "Técnicas e tecnologias para medições precisas, análises técnicas e controle de áreas, estruturas e obras, garantindo segurança, confiabilidade dos dados e suporte à tomada de decisão.",
-    features: ["Certificação INCRA", "Memorial descritivo", "Análise de confrontantes", "Documentação técnica"]
+    features: ["Termografia com drones", "Inspeção de fachada", "Patologias estruturais", "Determinação de volumes"]
   },
   {
     icon: FileCheck,
