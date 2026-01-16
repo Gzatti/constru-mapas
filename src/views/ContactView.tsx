@@ -52,7 +52,7 @@ const ContactView = () => {
                 <h3 className="font-bold text-lg text-muted-foreground uppercase tracking-wide">
                   Localização
                 </h3>
-                <p className="text-xl font-bold text-foreground pt-[23px] py-[12px]">
+                <p className="text-xl font-bold text-foreground py-[12px] pt-[12px]">
                   {contact.location}
                 </p>
               </div>
@@ -60,40 +60,27 @@ const ContactView = () => {
           </div>
           
           <div className="text-center">
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=construmapastopo@gmail.com&su=Or%C3%A7amento&body=Ol%C3%A1%2C%20gostaria%20de%20contratar%20os%20servi%C3%A7os%20da%20Construmapas%2C%20quero%20fazer%20um%20or%C3%A7amento."
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => {
-                const to = "construmapastopo@gmail.com";
-                const subject = "Orçamento";
-                const body =
-                  "Olá, gostaria de contratar os serviços da Construmapas, quero fazer um orçamento.";
-
-                const encodedTo = encodeURIComponent(to);
-                const encodedSubject = encodeURIComponent(subject);
-                const encodedBody = encodeURIComponent(body);
-
-                const isAndroid = /Android/i.test(navigator.userAgent);
-                const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-                if (isAndroid) {
-                  e.preventDefault();
-                  // Tenta abrir o app do Gmail diretamente (Android)
-                  window.location.href = `intent://co?to=${encodedTo}&subject=${encodedSubject}&body=${encodedBody}#Intent;scheme=googlegmail;package=com.google.android.gm;end`;
-                }
-
-                if (isIOS) {
-                  e.preventDefault();
-                  // Tenta abrir o app do Gmail diretamente (iOS)
-                  window.location.href = `googlegmail://co?to=${encodedTo}&subject=${encodedSubject}&body=${encodedBody}`;
-                }
-              }}
-            >
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 px-12 py-6 text-lg"
-              >
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=construmapastopo@gmail.com&su=Or%C3%A7amento&body=Ol%C3%A1%2C%20gostaria%20de%20contratar%20os%20servi%C3%A7os%20da%20Construmapas%2C%20quero%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" onClick={e => {
+            const to = "construmapastopo@gmail.com";
+            const subject = "Orçamento";
+            const body = "Olá, gostaria de contratar os serviços da Construmapas, quero fazer um orçamento.";
+            const encodedTo = encodeURIComponent(to);
+            const encodedSubject = encodeURIComponent(subject);
+            const encodedBody = encodeURIComponent(body);
+            const isAndroid = /Android/i.test(navigator.userAgent);
+            const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+            if (isAndroid) {
+              e.preventDefault();
+              // Tenta abrir o app do Gmail diretamente (Android)
+              window.location.href = `intent://co?to=${encodedTo}&subject=${encodedSubject}&body=${encodedBody}#Intent;scheme=googlegmail;package=com.google.android.gm;end`;
+            }
+            if (isIOS) {
+              e.preventDefault();
+              // Tenta abrir o app do Gmail diretamente (iOS)
+              window.location.href = `googlegmail://co?to=${encodedTo}&subject=${encodedSubject}&body=${encodedBody}`;
+            }
+          }}>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 px-12 py-6 text-lg">
                 Solicitar Orçamento
               </Button>
             </a>
