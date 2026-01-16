@@ -43,25 +43,25 @@ const HeroView = () => {
           {/* Redes Sociais */}
           <div className="flex flex-wrap justify-center items-center gap-4 pb-8 sm:pb-0">
             <a href="https://www.instagram.com/construmapas/" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-sidebar-ring to-secondary hover:from-[#E1306C] hover:to-[#F77737]">
+              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[#1B4D6B] hover:from-[#E1306C] hover:to-[#F77737] hover:bg-gradient-to-r">
                 <Instagram className="mr-2 h-5 w-5" />
                 Instagram
               </Button>
             </a>
             <a href="https://www.facebook.com/construmapas" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-sidebar-ring to-secondary hover:from-[#1877F2] hover:to-[#4267B2]">
+              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[#2A6B5A] hover:from-[#1877F2] hover:to-[#4267B2] hover:bg-gradient-to-r">
                 <Facebook className="mr-2 h-5 w-5" />
                 Facebook
               </Button>
             </a>
             <a href="https://www.youtube.com/@construmapas" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-sidebar-ring to-secondary hover:from-[#FF0000] hover:to-[#CC0000]">
+              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[#3A8A4A] hover:from-[#FF0000] hover:to-[#CC0000] hover:bg-gradient-to-r">
                 <Youtube className="mr-2 h-5 w-5" />
                 Youtube
               </Button>
             </a>
             <a href="https://www.linkedin.com/company/construmapas" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-sidebar-ring to-secondary hover:from-[#0A66C2] hover:to-[#004182]">
+              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[#4AA83A] hover:from-[#0A66C2] hover:to-[#004182] hover:bg-gradient-to-r">
                 <Linkedin className="mr-2 h-5 w-5" />
                 LinkedIn
               </Button>
