@@ -17,7 +17,7 @@ export const services: Service[] = [
   {
     icon: Compass,
     title: "Engenharia, Inspeção e Volumetria",
-    description: "Determinação precisa de coordenadas geográficas conforme normas do INCRA, essencial para a regularização e registro de imóveis.",
+    description: "Técnicas e tecnologias para medições precisas, análises técnicas e controle de áreas, estruturas e obras, garantindo segurança, confiabilidade dos dados e suporte à tomada de decisão.",
     features: ["Certificação INCRA", "Memorial descritivo", "Análise de confrontantes", "Documentação técnica"]
   },
   {
