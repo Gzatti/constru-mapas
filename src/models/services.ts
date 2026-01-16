@@ -10,7 +10,7 @@ export interface Service {
 export const services: Service[] = [
   {
     icon: Map,
-    title: "Levantamentos Topográficos",
+    title: "Levantamentos Topográficos Fundamentais",
     description: "Mapeamento preciso do terreno com tecnologia de ponta, fornecendo dados essenciais para projetos de construção e desenvolvimento.",
     features: ["Planimetria", "Altimetria", "Planialtimetria", "Curvas de nível"]
   },
