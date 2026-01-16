@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Instagram } from "lucide-react";
+import { Phone, Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
 import heroImage from "@/assets/hero-topography.jpg";
 import logoBranca from "@/assets/logo-branca.png";
 
@@ -23,23 +23,47 @@ const HeroView = () => {
           <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
             Precisão e qualidade em levantamentos topográficos, georreferenciamento e regularização de propriedades.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center pt-6 gap-[32px] pb-8 sm:pb-0">
+          
+          {/* Consultores */}
+          <div className="flex flex-col sm:flex-row justify-center items-center pt-6 gap-[32px] pb-4">
             <a href="https://wa.me/554591356655?text=Ol%C3%A1%20Fernando,%20gostaria%20de%20um%20or%C3%A7amento%20da%20ConstruMapas!%20" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="w-[200px] sm:w-auto text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-center bg-sidebar-ring">
                 <Phone className="mr-2 h-5 w-5" />
                 Consultor Fernando  
               </Button>
             </a>
-            <a href="https://www.instagram.com/construmapas/" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-[200px] sm:w-auto text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-sidebar-ring to-secondary hover:from-[#E1306C] hover:to-[#F77737]">
-                <Instagram className="mr-2 h-5 w-5" />
-                Instagram
-              </Button>
-            </a>
             <a href="https://wa.me/5545988155411?text=Ol%C3%A1%20Gabriel,%20gostaria%20de%20um%20or%C3%A7amento%20da%20ConstruMapas!%20" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="w-[200px] sm:w-auto backdrop-blur-sm border-white/30 text-white hover:bg-secondary-hover hover:text-white transition-all duration-300 hover:scale-105 bg-secondary">
                 <Phone className="mr-2 h-5 w-5" />
                 Consultor Gabriel 
+              </Button>
+            </a>
+          </div>
+          
+          {/* Redes Sociais */}
+          <div className="flex flex-wrap justify-center items-center gap-4 pb-8 sm:pb-0">
+            <a href="https://www.instagram.com/construmapas/" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-sidebar-ring to-secondary hover:from-[#E1306C] hover:to-[#F77737]">
+                <Instagram className="mr-2 h-5 w-5" />
+                Instagram
+              </Button>
+            </a>
+            <a href="https://www.facebook.com/construmapas" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-sidebar-ring to-secondary hover:from-[#1877F2] hover:to-[#4267B2]">
+                <Facebook className="mr-2 h-5 w-5" />
+                Facebook
+              </Button>
+            </a>
+            <a href="https://www.youtube.com/@construmapas" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-sidebar-ring to-secondary hover:from-[#FF0000] hover:to-[#CC0000]">
+                <Youtube className="mr-2 h-5 w-5" />
+                Youtube
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/company/construmapas" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-sidebar-ring to-secondary hover:from-[#0A66C2] hover:to-[#004182]">
+                <Linkedin className="mr-2 h-5 w-5" />
+                LinkedIn
               </Button>
             </a>
           </div>
