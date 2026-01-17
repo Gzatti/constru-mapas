@@ -49,13 +49,13 @@ const HeroView = () => {
               </Button>
             </a>
             <a href="https://www.facebook.com/construmapas" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[hsl(180,40%,35%)] hover:from-[#1877F2] hover:to-[#4267B2] hover:bg-gradient-to-r">
+              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[hsl(192,85%,45%)] hover:from-[#1877F2] hover:to-[#4267B2] hover:bg-gradient-to-r">
                 <Facebook className="mr-2 h-5 w-5" />
                 Facebook
               </Button>
             </a>
             <a href="https://www.youtube.com/@construmapas" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[hsl(155,40%,38%)] hover:from-[#FF0000] hover:to-[#CC0000] hover:bg-gradient-to-r">
+              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[hsl(167,75%,42%)] hover:from-[#FF0000] hover:to-[#CC0000] hover:bg-gradient-to-r">
                 <Youtube className="mr-2 h-5 w-5" />
                 Youtube
               </Button>
