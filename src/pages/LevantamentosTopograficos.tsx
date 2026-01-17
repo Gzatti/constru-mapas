@@ -1,0 +1,139 @@
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { ArrowLeft, Map, Target, Ruler, Mountain, CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const LevantamentosTopograficos = () => {
+  const services = [
+    {
+      icon: Target,
+      title: "Planimetria",
+      description: "Representação horizontal do terreno, identificando limites, divisas, construções e elementos naturais. Essencial para projetos de loteamento e demarcação de áreas."
+    },
+    {
+      icon: Ruler,
+      title: "Altimetria",
+      description: "Medição precisa das diferenças de nível do terreno. Fundamental para projetos de drenagem, terraplanagem e obras de infraestrutura."
+    },
+    {
+      icon: Map,
+      title: "Planialtimetria",
+      description: "Combinação da planimetria e altimetria, fornecendo uma visão completa do terreno em planta e perfil. Ideal para projetos de construção civil."
+    },
+    {
+      icon: Mountain,
+      title: "Curvas de Nível",
+      description: "Representação gráfica do relevo através de linhas que conectam pontos de mesma altitude. Permite visualizar declives, vales e elevações do terreno."
+    }
+  ];
+
+  const benefits = [
+    "Precisão milimétrica com equipamentos de última geração",
+    "Equipe técnica especializada e certificada",
+    "Relatórios detalhados e documentação completa",
+    "Suporte técnico durante todo o projeto",
+    "Conformidade com normas ABNT e legislação vigente",
+    "Entrega dentro do prazo acordado"
+  ];
+
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="bg-primary text-primary-foreground py-16">
+        <div className="container mx-auto px-4">
+          <Link to="/">
+            <Button variant="ghost" className="mb-6 text-primary-foreground hover:bg-primary-foreground/10">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Voltar
+            </Button>
+          </Link>
+          <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Levantamentos Topográficos Fundamentais
+            </h1>
+            <p className="text-xl text-primary-foreground/90">
+              Mapeamento preciso do terreno com tecnologia de ponta, fornecendo dados essenciais para projetos de construção e desenvolvimento.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      {/* Services Grid */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
+            Nossos Serviços de Levantamento
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {services.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 rounded-xl bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">
+                      <Icon className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold mb-2 text-foreground">{service.title}</h3>
+                      <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                    </div>
+                  </div>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
+            Por que escolher a ConstruMapas?
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {benefits.map((benefit, index) => (
+              <div key={index} className="flex items-center gap-3 p-4 bg-card rounded-lg border border-border/50">
+                <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
+                <span className="text-foreground">{benefit}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4 text-foreground">
+            Precisa de um levantamento topográfico?
+          </h2>
+          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Entre em contato conosco para solicitar um orçamento personalizado para seu projeto.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="https://wa.me/554591356655?text=Ol%C3%A1%20Fernando,%20gostaria%20de%20um%20or%C3%A7amento%20para%20levantamento%20topogr%C3%A1fico!" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="w-full sm:w-auto">
+                Falar com Fernando
+              </Button>
+            </a>
+            <a href="https://wa.me/5545988155411?text=Ol%C3%A1%20Gabriel,%20gostaria%20de%20um%20or%C3%A7amento%20para%20levantamento%20topogr%C3%A1fico!" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                Falar com Gabriel
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer Link */}
+      <div className="py-8 text-center border-t border-border">
+        <Link to="/" className="text-primary hover:underline">
+          ← Voltar para página inicial
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default LevantamentosTopograficos;

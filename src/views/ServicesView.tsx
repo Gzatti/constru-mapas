@@ -1,5 +1,8 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { useServices } from "@/controllers/useServices";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 const ServicesView = () => {
   const services = useServices();
@@ -41,6 +44,14 @@ const ServicesView = () => {
                     </li>
                   ))}
                 </ul>
+                {index === 0 && (
+                  <Link to="/levantamentos-topograficos" className="mt-6 block">
+                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                      Saiba mais
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                )}
               </Card>
             );
           })}
