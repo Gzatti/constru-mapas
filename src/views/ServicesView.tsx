@@ -44,14 +44,15 @@ const ServicesView = () => {
                     </li>
                   ))}
                 </ul>
-                {index === 0 && (
-                  <Link to="/levantamentos-topograficos" className="mt-6 block">
-                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                      Saiba mais
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
-                )}
+                <Link 
+                  to={index === 0 ? "/levantamentos-topograficos" : index === 1 ? "/engenharia-inspecao" : "/georreferenciamento"} 
+                  className="mt-6 block"
+                >
+                  <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    Saiba mais
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </Card>
             );
           })}
