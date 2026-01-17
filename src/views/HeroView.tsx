@@ -54,7 +54,7 @@ const HeroView = () => {
                 Facebook
               </Button>
             </a>
-            <a href="https://www.youtube.com/@construmapas" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/@ConstruMapas" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[hsl(167_72%_48%)] hover:from-[#FF0000] hover:to-[#CC0000] hover:bg-gradient-to-r">
                 <Youtube className="mr-2 h-5 w-5" />
                 Youtube
