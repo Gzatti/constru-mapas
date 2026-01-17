@@ -48,7 +48,7 @@ const HeroView = () => {
                 Instagram
               </Button>
             </a>
-            <a href="https://www.facebook.com/construmapas" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/profile.php?id=61572500445995" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[hsl(192_80%_50%)] hover:from-[#1877F2] hover:to-[#4267B2] hover:bg-gradient-to-r">
                 <Facebook className="mr-2 h-5 w-5" />
                 Facebook
