@@ -116,12 +116,12 @@ const EngenhariaInspecao = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a href="https://wa.me/554591356655?text=Ol%C3%A1%20Fernando,%20gostaria%20de%20um%20or%C3%A7amento%20para%20inspe%C3%A7%C3%A3o%20t%C3%A9cnica!" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto bg-sidebar-ring hover:bg-sidebar-ring/90 text-white">
                 Falar com Fernando
               </Button>
             </a>
             <a href="https://wa.me/5545988155411?text=Ol%C3%A1%20Gabriel,%20gostaria%20de%20um%20or%C3%A7amento%20para%20inspe%C3%A7%C3%A3o%20t%C3%A9cnica!" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-white">
                 Falar com Gabriel
               </Button>
             </a>
