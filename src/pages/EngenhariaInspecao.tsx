@@ -47,7 +47,7 @@ const EngenhariaInspecao = () => {
               Voltar
             </Button>
           </Link>
-          <div className="max-w-3xl flex items-center gap-4">
+          <div className="max-w-3xl mx-auto flex items-center gap-4 text-center">
             <Compass className="h-12 w-12 flex-shrink-0" />
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
