@@ -130,9 +130,12 @@ const EngenhariaInspecao = () => {
       </section>
 
       {/* Footer Link */}
-      <div className="py-8 text-center border-t border-border">
-        <Link to="/" className="text-primary hover:underline">
-          ← Voltar para página inicial
+      <div className="py-12 text-center border-t border-border bg-muted/20">
+        <Link to="/">
+          <Button variant="outline" size="lg" className="gap-2 border-primary/30 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+            <ArrowLeft className="h-4 w-4" />
+            Voltar para página inicial
+          </Button>
         </Link>
       </div>
     </div>
