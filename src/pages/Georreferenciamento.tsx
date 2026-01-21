@@ -116,12 +116,12 @@ const Georreferenciamento = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a href="https://wa.me/554591356655?text=Ol%C3%A1%20Fernando,%20gostaria%20de%20um%20or%C3%A7amento%20para%20georreferenciamento!" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto bg-sidebar-ring hover:bg-sidebar-ring/90 text-white">
                 Falar com Fernando
               </Button>
             </a>
             <a href="https://wa.me/5545988155411?text=Ol%C3%A1%20Gabriel,%20gostaria%20de%20um%20or%C3%A7amento%20para%20georreferenciamento!" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-white">
                 Falar com Gabriel
               </Button>
             </a>
@@ -130,9 +130,12 @@ const Georreferenciamento = () => {
       </section>
 
       {/* Footer Link */}
-      <div className="py-8 text-center border-t border-border">
-        <Link to="/" className="text-primary hover:underline">
-          ← Voltar para página inicial
+      <div className="py-12 text-center border-t border-border bg-muted/20">
+        <Link to="/">
+          <Button variant="outline" size="lg" className="gap-2 border-primary/30 hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+            <ArrowLeft className="h-4 w-4" />
+            Voltar para página inicial
+          </Button>
         </Link>
       </div>
     </div>
