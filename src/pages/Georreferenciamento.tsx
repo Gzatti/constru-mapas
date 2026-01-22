@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, FileCheck, Maximize, Grid3X3, Scissors, CheckCircle, Scale } from "lucide-react";
+import { ArrowLeft, FileCheck, Maximize, Grid3X3, Scissors, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Georreferenciamento = () => {
@@ -47,16 +47,13 @@ const Georreferenciamento = () => {
               Voltar
             </Button>
           </Link>
-          <div className="max-w-3xl flex items-center gap-4">
-            <Scale className="h-12 w-12 flex-shrink-0" />
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Georreferenciamento e Regularização
-              </h1>
-              <p className="text-xl text-primary-foreground/90">
-                Assessoria completa para regularização de propriedades, garantindo conformidade legal e documental do seu imóvel.
-              </p>
-            </div>
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Georreferenciamento e Regularização
+            </h1>
+            <p className="text-xl text-primary-foreground/90">
+              Assessoria completa para regularização de propriedades, garantindo conformidade legal e documental do seu imóvel.
+            </p>
           </div>
         </div>
       </header>
