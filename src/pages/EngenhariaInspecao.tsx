@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Thermometer, Building, AlertTriangle, BarChart3, CheckCircle, Compass } from "lucide-react";
+import { ArrowLeft, Thermometer, Building, AlertTriangle, BarChart3, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const EngenhariaInspecao = () => {
@@ -47,16 +47,13 @@ const EngenhariaInspecao = () => {
               Voltar
             </Button>
           </Link>
-          <div className="max-w-3xl mx-auto flex items-center gap-4 text-center">
-            <Compass className="h-12 w-12 flex-shrink-0 -ml-2" />
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Engenharia, Inspeção e Volumetria
-              </h1>
-              <p className="text-xl text-primary-foreground/90">
-                Técnicas e tecnologias para medições precisas, análises técnicas e controle de áreas, estruturas e obras.
-              </p>
-            </div>
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Engenharia, Inspeção e Volumetria
+            </h1>
+            <p className="text-xl text-primary-foreground/90">
+              Técnicas e tecnologias para medições precisas, análises técnicas e controle de áreas, estruturas e obras.
+            </p>
           </div>
         </div>
       </header>
