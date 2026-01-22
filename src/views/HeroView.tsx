@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Phone, Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
 import heroImage from "@/assets/hero-topography.jpg";
 import logoBranca from "@/assets/logo-branca.png";
-
 const HeroView = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-5">
       {/* Background Image with Overlay */}
@@ -19,10 +18,8 @@ const HeroView = () => {
         <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
           <img src={logoBranca} alt="ConstruMapas Logo" className="h-32 w-32 md:h-56 md:w-56 mx-auto" />
           <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">ConstruMapas</h1>
-          <p className="text-2xl md:text-3xl text-white/90 font-light">Topografia com tecnologia de ponta</p>
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
-            Precisão e qualidade em levantamentos topográficos, georreferenciamento e regularização de propriedades.
-          </p>
+          <p className="text-2xl md:text-3xl text-white/90 font-light">Topografia e soluções em Engenharia com tecnologia de ponta</p>
+          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">Topografia Digital e Termografia com Drones</p>
           
           {/* Consultores */}
           <div className="flex flex-col sm:flex-row justify-center items-center pt-6 gap-[32px] pb-4">
