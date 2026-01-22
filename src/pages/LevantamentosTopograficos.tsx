@@ -47,7 +47,7 @@ const LevantamentosTopograficos = () => {
               Voltar
             </Button>
           </Link>
-          <div className="max-w-3xl">
+          <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Levantamentos Topográficos Fundamentais
             </h1>
