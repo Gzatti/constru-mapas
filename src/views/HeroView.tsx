@@ -41,28 +41,28 @@ const HeroView = () => {
           </div>
           
           {/* Redes Sociais */}
-          <div className="flex flex-wrap justify-center items-center gap-4 pb-8 sm:pb-0">
+          <div className="flex flex-wrap justify-center items-center gap-3 pb-8 sm:pb-0">
             <a href="https://www.instagram.com/construmapas/" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-sidebar-ring hover:from-[#E1306C] hover:to-[#F77737] hover:bg-gradient-to-r">
-                <Instagram className="mr-2 h-5 w-5" />
+              <Button size="sm" className="w-[120px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-sidebar-ring hover:from-[#E1306C] hover:to-[#F77737] hover:bg-gradient-to-r">
+                <Instagram className="mr-1.5 h-4 w-4" />
                 Instagram
               </Button>
             </a>
             <a href="https://www.facebook.com/profile.php?id=61572500445995" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[hsl(192_80%_50%)] hover:from-[#1877F2] hover:to-[#4267B2] hover:bg-gradient-to-r">
-                <Facebook className="mr-2 h-5 w-5" />
+              <Button size="sm" className="w-[120px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[hsl(192_80%_50%)] hover:from-[#1877F2] hover:to-[#4267B2] hover:bg-gradient-to-r">
+                <Facebook className="mr-1.5 h-4 w-4" />
                 Facebook
               </Button>
             </a>
             <a href="https://www.youtube.com/@ConstruMapas" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[hsl(167_72%_48%)] hover:from-[#FF0000] hover:to-[#CC0000] hover:bg-gradient-to-r">
-                <Youtube className="mr-2 h-5 w-5" />
+              <Button size="sm" className="w-[120px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-[hsl(167_72%_48%)] hover:from-[#FF0000] hover:to-[#CC0000] hover:bg-gradient-to-r">
+                <Youtube className="mr-1.5 h-4 w-4" />
                 Youtube
               </Button>
             </a>
             <a href="https://www.linkedin.com/company/construmapas" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="w-[140px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-secondary hover:from-[#0A66C2] hover:to-[#004182] hover:bg-gradient-to-r">
-                <Linkedin className="mr-2 h-5 w-5" />
+              <Button size="sm" className="w-[120px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-secondary hover:from-[#0A66C2] hover:to-[#004182] hover:bg-gradient-to-r">
+                <Linkedin className="mr-1.5 h-4 w-4" />
                 LinkedIn
               </Button>
             </a>
