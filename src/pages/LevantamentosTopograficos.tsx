@@ -6,24 +6,24 @@ import { Link } from "react-router-dom";
 const LevantamentosTopograficos = () => {
   const services = [
     {
-      icon: Target,
-      title: "Planimetria",
-      description: "Representação horizontal do terreno, identificando limites, divisas, construções e elementos naturais. Essencial para projetos de loteamento e demarcação de áreas."
-    },
-    {
-      icon: Ruler,
-      title: "Altimetria",
-      description: "Medição precisa das diferenças de nível do terreno. Fundamental para projetos de drenagem, terraplanagem e obras de infraestrutura."
-    },
-    {
       icon: Map,
       title: "Planialtimetria",
-      description: "Combinação da planimetria e altimetria, fornecendo uma visão completa do terreno em planta e perfil. Ideal para projetos de construção civil."
+      description: "Combinação da planimetria e altimetria, fornecendo uma visão completa do terreno em planta e perfil. Ideal para projetos de construção civil e infraestrutura."
+    },
+    {
+      icon: Target,
+      title: "Levantamento Cadastral",
+      description: "Identificação e registro de todos os elementos existentes na área, incluindo edificações, cercas, postes e demais benfeitorias para documentação precisa."
     },
     {
       icon: Mountain,
       title: "Curvas de Nível",
       description: "Representação gráfica do relevo através de linhas que conectam pontos de mesma altitude. Permite visualizar declives, vales e elevações do terreno."
+    },
+    {
+      icon: Ruler,
+      title: "Determinação de Volumes",
+      description: "Cálculo preciso de volumes de corte e aterro para obras de terraplanagem, movimentação de terra e projetos de engenharia civil."
     }
   ];
 
