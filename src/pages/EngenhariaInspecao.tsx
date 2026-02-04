@@ -60,7 +60,7 @@ const EngenhariaInspecao = () => {
               </p>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-[var(--shadow-elegant)] border border-border/50 bg-card">
-              <video className="w-full aspect-video object-cover" controls playsInline preload="metadata">
+              <video className="w-full aspect-video object-cover" autoPlay loop muted playsInline>
                 <source src={demoVideo} type="video/mp4" />
                 Seu navegador não suporta a reprodução de vídeos.
               </video>
