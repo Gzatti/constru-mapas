@@ -5,7 +5,10 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Não rola para o topo ao voltar para a página inicial
+    if (pathname !== "/") {
+      window.scrollTo(0, 0);
+    }
   }, [pathname]);
 
   return null;
