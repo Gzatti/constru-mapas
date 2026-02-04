@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, Thermometer, Building, AlertTriangle, BarChart3, CheckCircle } from "lucide-react";
+import { ArrowLeft, Thermometer, Building, AlertTriangle, BarChart3, CheckCircle, Play } from "lucide-react";
 import { Link } from "react-router-dom";
+import demoVideo from "@/assets/termografia-drone-demo.mp4";
 
 const EngenhariaInspecao = () => {
   const services = [
@@ -57,6 +58,37 @@ const EngenhariaInspecao = () => {
           </div>
         </div>
       </header>
+
+      {/* Video Showcase */}
+      <section className="py-16 bg-gradient-to-b from-muted/50 to-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4">
+                <Play className="h-4 w-4" />
+                Veja na prática
+              </span>
+              <h2 className="text-3xl font-bold text-foreground mb-3">
+                Inspeção com Drone em Ação
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Confira como realizamos inspeções aéreas com tecnologia de ponta para garantir resultados precisos e seguros.
+              </p>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-[var(--shadow-elegant)] border border-border/50 bg-card">
+              <video 
+                className="w-full aspect-video object-cover"
+                controls
+                playsInline
+                preload="metadata"
+              >
+                <source src={demoVideo} type="video/mp4" />
+                Seu navegador não suporta a reprodução de vídeos.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Services Grid */}
       <section className="py-16">
