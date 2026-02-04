@@ -16,7 +16,7 @@ export const services: Service[] = [
   },
   {
     icon: Compass,
-    title: "Engenharia, Inspeção e Volumetria",
+    title: "Termografia e Inspeção com Drones",
     description: "Técnicas e tecnologias para medições precisas, análises técnicas e controle de áreas, estruturas e obras, garantindo segurança, confiabilidade dos dados e suporte à tomada de decisão.",
     features: ["Termografia com drones", "Inspeção de fachada", "Patologias estruturais", "Determinação de volumes"]
   },
