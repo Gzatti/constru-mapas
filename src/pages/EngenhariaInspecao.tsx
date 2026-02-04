@@ -3,42 +3,26 @@ import { Card } from "@/components/ui/card";
 import { ArrowLeft, Thermometer, Building, AlertTriangle, BarChart3, CheckCircle, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import demoVideo from "@/assets/termografia-drone-demo.mp4";
-
 const EngenhariaInspecao = () => {
-  const services = [
-    {
-      icon: Thermometer,
-      title: "Termografia com Drones",
-      description: "Inspeção térmica aérea para identificação de anomalias em painéis solares, sistemas elétricos e isolamentos térmicos. Detecção precoce de falhas e manutenção preventiva."
-    },
-    {
-      icon: Building,
-      title: "Inspeção de Fachadas",
-      description: "Análise detalhada de fachadas de edificações utilizando drones e câmeras de alta resolução. Identificação de trincas, infiltrações e desplacamentos sem necessidade de andaimes."
-    },
-    {
-      icon: AlertTriangle,
-      title: "Patologias Estruturais",
-      description: "Diagnóstico de problemas estruturais como fissuras, corrosão de armaduras e deformações. Laudos técnicos completos para tomada de decisão em reparos e reforços."
-    },
-    {
-      icon: BarChart3,
-      title: "Determinação de Volumes",
-      description: "Cálculo preciso de volumes de corte e aterro, pilhas de materiais e reservatórios. Ideal para mineração, construção civil e controle de estoques."
-    }
-  ];
-
-  const benefits = [
-    "Tecnologia de drones de última geração",
-    "Inspeções seguras sem exposição de trabalhadores",
-    "Relatórios com imagens em alta resolução",
-    "Análise termográfica certificada",
-    "Modelos 3D e nuvem de pontos",
-    "Suporte técnico especializado"
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const services = [{
+    icon: Thermometer,
+    title: "Termografia com Drones",
+    description: "Inspeção térmica aérea para identificação de anomalias em painéis solares, sistemas elétricos e isolamentos térmicos. Detecção precoce de falhas e manutenção preventiva."
+  }, {
+    icon: Building,
+    title: "Inspeção de Fachadas",
+    description: "Análise detalhada de fachadas de edificações utilizando drones e câmeras de alta resolução. Identificação de trincas, infiltrações e desplacamentos sem necessidade de andaimes."
+  }, {
+    icon: AlertTriangle,
+    title: "Patologias Estruturais",
+    description: "Diagnóstico de problemas estruturais como fissuras, corrosão de armaduras e deformações. Laudos técnicos completos para tomada de decisão em reparos e reforços."
+  }, {
+    icon: BarChart3,
+    title: "Determinação de Volumes",
+    description: "Cálculo preciso de volumes de corte e aterro, pilhas de materiais e reservatórios. Ideal para mineração, construção civil e controle de estoques."
+  }];
+  const benefits = ["Tecnologia de drones de última geração", "Inspeções seguras sem exposição de trabalhadores", "Relatórios com imagens em alta resolução", "Análise termográfica certificada", "Modelos 3D e nuvem de pontos", "Suporte técnico especializado"];
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="bg-primary text-primary-foreground py-16">
         <div className="container mx-auto px-4">
@@ -50,7 +34,7 @@ const EngenhariaInspecao = () => {
           </Link>
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Engenharia, Inspeção e Volumetria
+              Termografia e Inspeção com Drones    
             </h1>
             <p className="text-xl text-primary-foreground/90">
               Técnicas e tecnologias para medições precisas, análises técnicas e controle de áreas, estruturas e obras.
@@ -76,12 +60,7 @@ const EngenhariaInspecao = () => {
               </p>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-[var(--shadow-elegant)] border border-border/50 bg-card">
-              <video 
-                className="w-full aspect-video object-cover"
-                controls
-                playsInline
-                preload="metadata"
-              >
+              <video className="w-full aspect-video object-cover" controls playsInline preload="metadata">
                 <source src={demoVideo} type="video/mp4" />
                 Seu navegador não suporta a reprodução de vídeos.
               </video>
@@ -98,9 +77,8 @@ const EngenhariaInspecao = () => {
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {services.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
+            const Icon = service.icon;
+            return <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
                   <div className="flex items-start gap-4">
                     <div className="p-3 rounded-xl bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">
                       <Icon className="h-6 w-6" />
@@ -110,9 +88,8 @@ const EngenhariaInspecao = () => {
                       <p className="text-muted-foreground leading-relaxed">{service.description}</p>
                     </div>
                   </div>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
         </div>
       </section>
@@ -124,12 +101,10 @@ const EngenhariaInspecao = () => {
             Por que escolher a ConstruMapas?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-center gap-3 p-4 bg-card rounded-lg border border-border/50">
+            {benefits.map((benefit, index) => <div key={index} className="flex items-center gap-3 p-4 bg-card rounded-lg border border-border/50">
                 <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
                 <span className="text-foreground">{benefit}</span>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -167,8 +142,6 @@ const EngenhariaInspecao = () => {
           </Button>
         </Link>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default EngenhariaInspecao;
