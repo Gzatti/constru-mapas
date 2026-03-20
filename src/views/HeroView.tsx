@@ -17,7 +17,7 @@ const HeroView = () => {
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
           <img src={logoBranca} alt="ConstruMapas Logo" className="h-32 w-32 md:h-56 md:w-56 mx-auto" />
-          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">ConstruMapas</h1>
+          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">Constru Mapas</h1>
           <p className="text-2xl md:text-3xl text-white/90 font-light">Topografia e soluções em Engenharia com tecnologia de ponta</p>
           <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">Topografia Digital e Termografia com Drones</p>
           
