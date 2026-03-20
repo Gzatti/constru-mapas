@@ -12,7 +12,7 @@ export const services: Service[] = [
     icon: Map,
     title: "Levantamentos Topográficos Fundamentais",
     description: "Mapeamento preciso do terreno com tecnologia de ponta, fornecendo dados essenciais para projetos de construção e desenvolvimento.",
-    features: ["Planialtimetria", "Levantamento Cadastral", "Curvas de nível", "Determinação de volumes"]
+    features: ["Planialtimetria", "Levantamento Cadastral", "Curvas de nível", "Locação de terrenos"]
   },
   {
     icon: Compass,
