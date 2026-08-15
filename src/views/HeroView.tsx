@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
+import { Phone, Instagram, Facebook, Youtube, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-topography.jpg";
 import logoBranca from "@/assets/logo-branca.png";
 const HeroView = () => {
