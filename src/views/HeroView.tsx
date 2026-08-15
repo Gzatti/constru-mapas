@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
+import { Phone, Instagram, Facebook, Youtube, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero-topography.jpg";
 import logoBranca from "@/assets/logo-branca.png";
 const HeroView = () => {
@@ -57,10 +57,10 @@ const HeroView = () => {
                 Youtube
               </Button>
             </a>
-            <a href="https://www.linkedin.com/company/construmapas" target="_blank" rel="noopener noreferrer">
-              <Button size="sm" className="w-[120px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-secondary hover:from-[#0A66C2] hover:to-[#004182] hover:bg-gradient-to-r">
-                <Linkedin className="mr-1.5 h-4 w-4" />
-                LinkedIn
+            <a href="https://maps.app.goo.gl/Q6jfS1g5YS62aGhk8" target="_blank" rel="noopener noreferrer">
+              <Button size="sm" className="w-[120px] text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-secondary hover:from-[#34A853] hover:to-[#1E8E3E] hover:bg-gradient-to-r">
+                <MapPin className="mr-1.5 h-4 w-4" />
+                Maps
               </Button>
             </a>
           </div>
