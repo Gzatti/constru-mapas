@@ -117,7 +117,7 @@ const Georreferenciamento = () => {
                 Falar com Fernando
               </Button>
             </a>
-            <a href="https://wa.me/5545988155411?text=Ol%C3%A1%20Gabriel,%20gostaria%20de%20um%20or%C3%A7amento%20para%20georreferenciamento!" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5545920049427?text=Ol%C3%A1%20Gabriel,%20gostaria%20de%20um%20or%C3%A7amento%20para%20georreferenciamento!" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-white">
                 Falar com Gabriel
               </Button>

@@ -29,7 +29,7 @@ const HeroView = () => {
                 Consultor Fernando  
               </Button>
             </a>
-            <a href="https://wa.me/5545988155411?text=Ol%C3%A1%20Gabriel,%20gostaria%20de%20um%20or%C3%A7amento%20da%20ConstruMapas!%20" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5545920049427?text=Ol%C3%A1%20Gabriel,%20gostaria%20de%20um%20or%C3%A7amento%20da%20ConstruMapas!%20" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="w-[200px] sm:w-auto backdrop-blur-sm border-white/30 text-white hover:bg-secondary-hover hover:text-white transition-all duration-300 hover:scale-105 bg-secondary">
                 <Phone className="mr-2 h-5 w-5" />
                 Consultor Gabriel 
